@@ -9,4 +9,4 @@ class CapuletEngine(Engine):
         self.last_service_mileage = last_service_mileage
 
     def needs_service(self) -> bool:
-        return self.current_mileage - self.last_service_mileage > self.SERVICE_MILEAGE_THRESHOLD
+        return self.current_mileage - self.last_service_mileage >= self.SERVICE_MILEAGE_THRESHOLD
