@@ -4,7 +4,7 @@ from battery.battery import Battery
 
 
 class SpindlerBattery(Battery):
-    SERVICE_THRESHOLD = 2
+    SERVICE_THRESHOLD = 3
 
     def __init__(self, last_service_date: datetime, current_date: datetime):
         self.last_service_date = last_service_date
